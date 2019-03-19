@@ -1,0 +1,56 @@
+body, :root {
+  background: white;
+  font-family: sans-serif;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5em;
+}
+
+main a {
+}
+
+label.station {
+  width: 33vw;
+  height: 33vw;
+  position: relative;
+  max-width: 100px;
+  max-height: 100px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  font-size: smaller;
+}
+
+label.station p {
+  text-align: center;
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ p {
+  display: block;
+}
+
+span.color,
+span.name {
+  color: #eee;
+  background: #222;
+  padding: 0.2em;
+  border-radius: 0.2em;
+}
+
+span.name {
+  text-transform: capitalize;
+}
+
+span.color {
+  font-family: monospace;
+}
