@@ -1,6 +1,19 @@
 body, :root {
+  margin: 0;
   background: white;
   font-family: sans-serif;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+header, footer {
+  padding: 10px
 }
 
 main {

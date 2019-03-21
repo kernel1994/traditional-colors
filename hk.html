@@ -824,5 +824,16 @@
     </p>
 </footer>
 
+<script type="text/javascript">
+   let body = document.querySelector('body');
+
+   document.querySelectorAll('input[type="checkbox"]').forEach((e) => {
+      e.addEventListener('click', () => {
+         console.log(e.parentElement.style.backgroundColor);
+         body.style.backgroundColor = e.parentElement.style.backgroundColor;
+      });
+   });
+</script>
+
 </body>
 </html>
